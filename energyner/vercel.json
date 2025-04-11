@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "builds": [
+    {
+      "src": "backend/energyServ.mjs",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "backend/energyServ.mjs"
+    }
+  ],
+  "github": {
+    "branch": "main"
+  }
+}
